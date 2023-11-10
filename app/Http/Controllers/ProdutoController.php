@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
 {
-      //List
-      public function index()
-      {
-          return Produto::all();
-      }
+    //List
+    public function index()
+    {
+        return Produto::all();
+    }
 
-      //Create
+    //Create
     public function store(Request $request)
     {
         $produto = Produto::create([
